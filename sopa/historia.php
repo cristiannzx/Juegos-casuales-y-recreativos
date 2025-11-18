@@ -1,5 +1,5 @@
 <?php
-$palabras = ["ALGORITMO", "BASEDEDATOS", "REDES", "SOFTWARE", "HARDWARE", "COMPILADOR", "ROUTER", "FIREWALL"];
+$palabras = ["ATAHUALPA", "AZTECA", "MESOPOTAMIA", "PREHISTORIA", "RENACIMIENTO", "ABSOLUTISMO", "INCAS", "AYLLU"];
 $tamano = 15;
 
 $tablero = array_fill(0, $tamano, array_fill(0, $tamano, ''));
