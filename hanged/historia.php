@@ -3,7 +3,7 @@ session_start();
 
 if (!isset($_SESSION["iniciado"]) || isset($_POST["reiniciar"])) {
 
-    $palabras = ["hueso", "neurona", "esqueleto", "hemoglobina", "cerebro", "arteria"];
+    $palabras = ["guerra", "incas", "imperio", "conquistador", "esclavo", "reynos"];
     $palabra = $palabras[array_rand($palabras)];
 
     $_SESSION["palabra"] = $palabra;              
@@ -45,7 +45,7 @@ if (isset($_POST["letra"])) {
         }
     }
 }
-//dibujo
+
 function dibujo($i) {
 
     $d = [
@@ -130,7 +130,7 @@ $perdiste = ($intentos >= 6);
         <a href="menu.php" class="btn">Regresar</a>
     </header>
     <center>
-<h1>Anatomia</h1>
+<h1>Historia</h1>
 
 <pre><?php echo dibujo($intentos); ?></pre>
 
@@ -151,7 +151,6 @@ if (!empty($_SESSION["letras_usadas"])) {
 
 <?php elseif ($perdiste): ?>
     <h3>PERDISTE la palabra era: <?php echo $_SESSION["palabra"]; ?></h3>
-
 <?php else: ?>
 
 <form method="post">
